@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #09f;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    padding: 1em 1em;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 2%;
+    border: 1px solid black;
+    width: 450px;
+    height: auto;
+    padding: 1em;
+    margin: 0.5em
+}
+
+.recipes_name {
+    list-style-type: none;
+}
+
+.dish_pic {
+    width: 350px;
+    height: auto;
+    border-radius: 5%;
+    margin: 1em
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1.3rem;
+}
