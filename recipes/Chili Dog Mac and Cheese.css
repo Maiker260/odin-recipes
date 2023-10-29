@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&family=Quicksand:wght@300&display=swap');
+
+
+:root {
+    --bng: rgb(206, 209, 186)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bng);
+    /* border: 1px solid black; */
+}
+
+.container {
+    margin: auto;
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 40px 70px 50px;
+    background-color: rgb(213, 218, 191);
+}
+
+.secti {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.title_sec {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+
+.descrip {
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.descrip li{
+   line-height: 1.5 ;
+   margin-bottom: 0.2em;
+}
+
+.REMOVE {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    background-color: var(--bng);
+}
+
+.REMOVE > p {
+    text-align: center;
+    height: 50px;
+    padding: 15px;
+}

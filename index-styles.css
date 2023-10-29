@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&family=Quicksand:wght@300&display=swap');
 
+:root {
+    --bng: rgb(206, 209, 186)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,23 +14,35 @@
 }
 
 body {
-    background-color: #09f;
-    position: absolute;
-    top: 10%;
+    background-color: var(--bng);
+    /* border: 1px solid black; */
+}
+
+.container {
+    /* border: 1px solid black; */
+    padding-top: 150px;
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+header {
+    width: 100%;
+    /* border: 1px solid black; */
 }
 
 h1 {
     font-size: 2rem;
     text-align: center;
-    margin: 0.5em;
     font-size: 4rem;
     font-family: 'Amatic SC', cursive;
 }
 
-.container {
+.content {
     display: flex;
     padding: 1em 1em;
-    width: 100%;
     justify-content: space-around;
 }
 
@@ -34,26 +50,45 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px;
     height: auto;
     padding: 1em;
-    margin: 0.5em
+    margin: 0.5em;
 }
 
 .recipes_name {
     list-style-type: none;
     font-size: 1.5em;
     font-family: 'Quicksand', sans-serif;
-    margin: 1em
+    margin: 1em;
 }
 
 .dish_pic {
     width: 350px;
     height: auto;
     border-radius: 5%;
+    transition: all 0.1s linear;
+}
+
+.dish_pic:hover {
+    transform: scale(1.1,1.1);
+    box-shadow: 0 0 10px rgb(128, 131, 103);
 }
 
 a {
     cursor: pointer;
     color: black;
+}
+
+.REMOVE {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    background-color: var(--bng);
+}
+
+.REMOVE > p {
+    text-align: center;
+    height: 50px;
+    padding: 15px;
 }
